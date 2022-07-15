@@ -6,6 +6,9 @@ import {Seconds} from "../VideoTools/Seconds";
 
 export const VideoPreviewScreen = () =>{
 
+    /*
+        Hook personalizada de useStateVideo
+    */
     const {
         url,
         pip,
