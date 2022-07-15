@@ -41,6 +41,10 @@ export const VideoPreviewScreen = () =>{
         handlePlayPause()
     }
 
+    /*
+        Funcion para cambiar las velocidades del video, teniendo como primer click el cambio a una segunda velocidad,
+        luego a una tercera, y se reinicia, iniciando en 1.0
+     */
     const switchVelocity1 = () =>{
         setVelocity1(!velocity1)
         setVelocity2(!velocity2)

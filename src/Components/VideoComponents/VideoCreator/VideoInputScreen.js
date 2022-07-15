@@ -4,23 +4,30 @@ import {Link} from "react-router-dom";
 
 
 export const VideoInputScreen = () =>{
-
-    //Hook para obtener los datos del Input donde se escribe la url
+    /*
+        Hook para obtener los datos del Input donde se escribe la url
+    */
     const [inputUrl, setInputUrl] = useState("")
 
+    /*
+        Funcion que guarda y actualiza en la hook, cada vez que hay un cambio en Input
+    */
     const updateHookInput = (data) =>{
         setInputUrl( data.target.value)
     }
 
-    //Funcion que actualiza el hook de InputUrl, para el almacenamiento temporal de este
-    //Funcion que obtiene y crea la dependencia de la base de datos relacionada con el video a usar
+    /*
+        Funcion que obtiene y crea la dependencia de la base de datos relacionada con el video a usar
+    */
     const createDBUrl = () =>{
         axios.post("http://localhost:8000/video-data", {
             url: inputUrl
         }).then(res => console.log(res.data)).catch(err => console.log(err))
     }
 
-    //Elimina el link del video en caso de que el usuario regrese
+    /*
+        Elimina el link del video en caso de que el usuario regrese
+    */
     useEffect(() => {
         axios.delete("http://localhost:8000/video-data/1").then(res => console.log(res.data)).catch(err => console.log(err))
     }, [])

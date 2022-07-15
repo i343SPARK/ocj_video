@@ -10,6 +10,9 @@ import {TrueFalse} from "./TypeQuestionMaker/TrueFalse";
 
 export const VideoEditScreen = () =>{
 
+    /*
+        Hook personalizada de useStateVideo
+    */
     const {
         url,
         pip,
@@ -29,8 +32,14 @@ export const VideoEditScreen = () =>{
         uploadUrl,
         ref
     } = useStateVideo()
-
+    /*
+        Cambia el simbolo del video
+     */
     const [playeStop, setPlayStop] = useState(false)
+
+    /*
+        Muestra el estado de las pantallas del tipo de pregunta
+    **/
     const [screen1, setScreen1] = useState(false)
     const [screen2, setScreen2] = useState(false)
     const [screen3, setScreen3] = useState(false)
@@ -44,6 +53,9 @@ export const VideoEditScreen = () =>{
         handlePlayPause()
     }
 
+    /*
+        Funciones para cambiar el estado y mostrar los pop-ups de las preguntas
+    */
     const displayOptionQuestion1 = () =>{
         setScreen1(!screen1)
         setScreen2(false)
