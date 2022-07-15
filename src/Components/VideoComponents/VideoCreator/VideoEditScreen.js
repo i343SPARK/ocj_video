@@ -105,8 +105,12 @@ export const VideoEditScreen = () =>{
                             playbackRate={playbackRate}
                             volume={volume}
                             onError={e => console.log('onError', e)}
-                            onProgress={handleProgress}
+                            /*
+                                Aqui la razon que no se actualiza el slide bar, onProgress no activa la funcion
+                                Arreglando esto, el slide bar deberia de funcionar correctamente
+                            */
                             onDuration={handleDuration}
+                            onProgress={handleProgress}
                         />
                     </div>
                     <div className={"bar-video-controls"}>
