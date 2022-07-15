@@ -3,8 +3,8 @@ Herramienta para poder crear y usar videos interactivos, diseñada para que pers
 
 # Herramientas Utilizadas y documentacion:
 
-- (React Player)[https://www.npmjs.com/package/react-player]
+- [React Player](https://www.npmjs.com/package/react-player)
 
-- (JSON Server)[https://www.npmjs.com/package/json-server]
+- [JSON Server](https://www.npmjs.com/package/json-server)
 
-- (Axios)[https://www.npmjs.com/package/axios]
+- [Axios](https://www.npmjs.com/package/axios)
