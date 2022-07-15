@@ -1,0 +1,252 @@
+@import "TypeQuestion/multipleOption";
+
+.edit-section{
+  width: 100%;
+  height: auto;
+
+  .div-back-tab{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 90%;
+
+    .back-button{
+      border-bottom: 2px black solid;
+      color: black;
+      font-size: 21px;
+      text-decoration: none;
+
+      .arrow-symbol{
+        background-image: url("../../symbols/backArrow.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        margin-right: 5px;
+        width: 28px;
+        height: 16px;
+      }
+    }
+  }
+
+  .video-edit-div{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 30px;
+    gap: 20px;
+    width: 90%;
+
+    .video-edit--content{
+
+      .video-size{
+        background-color: #F1F1F1;
+        width: 640px;
+        height: 400px;
+      }
+
+      .bar-video-controls{
+        background-color: #D9D9D9;
+        border-radius: 4px;
+        display: flex;
+        margin-top: 10px;
+        padding: 10px 5px 10px 5px;
+        justify-content: space-between;
+
+        .left-div-options{
+          display: flex;
+          gap: 10px;
+
+          .play-video-button{
+            width: 28px;
+            height: 28px;
+            background-color: #D9D9D9;
+            border: none;
+
+            .isPlaySpan{
+              background-image: url("../../symbols/pause.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              display: inline-block;
+              margin-right: 5px;
+              width: 28px;
+              height: 28px;
+            }
+
+            .isStopSpan{
+              background-image: url("../../symbols/play.png");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              display: inline-block;
+              margin-right: 5px;
+              width: 28px;
+              height: 28px;
+            }
+          }
+
+          .back-video-button{
+            background-color: #666666;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 15px;
+            width: 100px;
+          }
+
+          .next-video-button{
+            background-color: #666666;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 15px;
+            width: 100px;
+          }
+        }
+
+        .right-div-options{
+          padding: 4px 40px;
+          border-radius: 4px;
+          background-color: #666666;
+
+          .seconds-display{
+            font-size: 15px;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .question-edit--content{
+      width: 640px;
+      height: auto;
+
+      .question-display-option{
+        background-color: #F1F1F1;
+        width: 640px;
+        height: 400px;
+
+      }
+
+      .bar-question-select{
+        background-color: #D9D9D9;
+        border-radius: 4px;
+        display: flex;
+        margin-top: 10px;
+        padding: 10px 5px 10px 5px;
+        justify-content: space-evenly;
+
+        .question-button-off{
+          background-color: #999999;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          font-size: 15px;
+          width: 180px;
+          height: 28px;
+
+          .orange-option{
+            background-image: url("../../symbols/EllipseOrange.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 5px;
+            width: 12px;
+            height: 12px;
+          }
+
+          .blue-option{
+            background-image: url("../../symbols/EllipseBlue.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 5px;
+            width: 12px;
+            height: 12px;
+          }
+
+          .green-option{
+            background-image: url("../../symbols/EllipseGreen.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 5px;
+            width: 12px;
+            height: 12px;
+          }
+        }
+
+        .question-button-on{
+          background-color: #666666;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          font-size: 15px;
+          width: 180px;
+          height: 28px;
+
+          .orange-option{
+            background-image: url("../../symbols/EllipseOrange.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 5px;
+            width: 12px;
+            height: 12px;
+          }
+
+          .blue-option{
+            background-image: url("../../symbols/EllipseBlue.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 5px;
+            width: 12px;
+            height: 12px;
+          }
+
+          .green-option{
+            background-image: url("../../symbols/EllipseGreen.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 5px;
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .bar-video-content{
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 70%;
+
+    .seek-bar{
+      width: 100%;
+    }
+  }
+
+  .edit-next-content{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 10%;
+
+    .edit-button{
+      background-color: #F1F1F1;
+      border: none;
+      border-bottom: black solid 3px;
+      color: black;
+      text-decoration: none;
+      font-size: 28px;
+    }
+  }
+}

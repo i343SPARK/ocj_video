@@ -1,0 +1,152 @@
+.display-question-on{
+  display: block;
+  padding: 20px 0;
+
+  .question-container{
+    background-color: #333;
+    border-radius: 9px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+
+    input{
+      background-color: #333;
+      border: none;
+      border-bottom: white solid 1px;
+      color: white;
+      font-size: 30px;
+      width: 100%;
+    }
+
+    input::placeholder{
+      color: white;
+    }
+  }
+
+  .options-container{
+    overflow: auto;
+    margin: 0 auto;
+    width: 90%;
+    height: 275px;
+
+    .option-container{
+      background-color: #DBDBDB;
+      border-radius: 9px;
+      margin: 20px 0;
+      padding: 0 10px;
+      width: 90%;
+      height: 70px;
+
+      .type-selection-container{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        button{
+          border: none;
+          width: 28px;
+          height: 28px;
+          background-color: #D9D9D9;
+
+          .true-correct-selected{
+            background-image: url("../../../symbols/CorrectOptionOn.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 5px;
+            width: 27px;
+            height: 27px;
+          }
+
+          .true-incorrect-selected{
+            background-image: url("../../../symbols/BadOptionOn.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 5px;
+            width: 27px;
+            height: 27px;
+          }
+
+          .false-correct-selected{
+            background-image: url("../../../symbols/CorrectOptionOff.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 5px;
+            width: 27px;
+            height: 27px;
+          }
+
+          .false-incorrect-selected{
+            background-image: url("../../../symbols/BadOptionOff.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 5px;
+            width: 27px;
+            height: 27px;
+          }
+        }
+      }
+
+      input{
+        background-color: #D9D9D9;
+        border: none;
+        border-bottom: black 1px solid;
+        color: black;
+        font-size: 19px;
+        width: 80%;
+      }
+
+      input::placeholder{
+        color: black;
+      }
+    }
+  }
+
+  .section-add-delete{
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    width: 10%;
+
+    button{
+      background-color: #F1F1F1;
+      border: none;
+      width: 28px;
+      height: 28px;
+
+
+      .add-icon{
+        background-image: url("../../../symbols/Ok.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        margin-right: 5px;
+        width: 27px;
+        height: 27px;
+      }
+
+      .delete-icon{
+        background-image: url("../../../symbols/Remove.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        margin-right: 5px;
+        width: 27px;
+        height: 27px;
+      }
+    }
+  }
+}
+
+.display-question-off{
+  display: none;
+}
